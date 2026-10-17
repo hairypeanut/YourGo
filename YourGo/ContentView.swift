@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
-    @AppStorage("hasSeenWelcome") private var hasSeenWelcome = false
+    @State private var hasEnteredApp = false
     @StateObject private var store = GameStore()
     var body: some View {
         Group {
-            if hasSeenWelcome { MainTabView().environmentObject(store) }
-            else { WelcomeView { withAnimation(.spring) { hasSeenWelcome = true } } }
+            if hasEnteredApp { MainTabView().environmentObject(store) }
+            else { WelcomeView { withAnimation(.spring) { hasEnteredApp = true } } }
         }.tint(YGTheme.orange)
     }
 }
