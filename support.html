@@ -2,104 +2,138 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contact & Support | YOUR GO</title>
-<meta name="description" content="Get help and support for YOUR GO.">
-<style>
-:root{--navy:#142b42;--gold:#f8c73e;--cream:#fff9eb;--ink:#21364b}
-*{box-sizing:border-box}
-body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-header,footer{background:var(--navy);color:white;padding:24px}
-header{border-bottom:6px solid var(--gold)}
-.header-inner,main{max-width:850px;margin:auto}
-.header-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:18px}
-.brand{color:var(--gold);font-size:26px;font-weight:900;text-decoration:none}
-.tagline{font-size:13px;color:#e9e4d5}
-nav{display:flex;gap:16px;flex-wrap:wrap}
-nav a{color:white;text-decoration:none;font-size:14px}
-nav a.active{color:var(--gold);font-weight:bold}
-main{padding:38px 22px 65px}
-h1{font-size:clamp(30px,5vw,44px);line-height:1.2;color:var(--navy)}
-h2{color:var(--navy);margin-top:30px}
-.intro{font-size:18px;color:#52667a}
-.panel{background:white;border:1px solid #e7dcbf;border-radius:18px;padding:24px;margin:28px 0}
-.button{display:inline-block;background:var(--gold);color:var(--navy);border:2px solid var(--navy);border-radius:12px;padding:12px 20px;font-weight:800;text-decoration:none}
-a{color:#125e9c}
-li{margin-bottom:8px}
-footer{text-align:center;font-size:13px}
-footer a{color:var(--gold)}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08182f">
+  <meta name="description" content="Support and help for YOUR GO, the collaborative storytelling game.">
+  <title>Support | YOUR GO</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --navy: #08182f;
+      --gold: #d7a70b;
+      --cream: #f6f1e6;
+      --ink: #14233c;
+      --muted: #596476;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.7;
+    }
+    header {
+      background: var(--navy);
+      color: #fff;
+      padding: 45px 20px 32px;
+      text-align: center;
+    }
+    .brand {
+      color: var(--gold);
+      font-size: 36px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+    header p { margin: 8px 0 0; color: #e6dfd0; }
+    nav {
+      background: var(--navy);
+      text-align: center;
+      padding: 0 12px 22px;
+    }
+    nav a {
+      color: #fff;
+      display: inline-block;
+      margin: 5px 10px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    nav a[aria-current="page"] { color: var(--gold); font-weight: 700; }
+    main { max-width: 800px; margin: 0 auto; padding: 38px 22px 65px; }
+    h1 { font-size: 32px; line-height: 1.2; }
+    h2 { font-size: 21px; margin-top: 34px; }
+    a { color: #975700; }
+    .contact {
+      background: #fff;
+      border-left: 5px solid var(--gold);
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin: 26px 0;
+    }
+    .email {
+      font-size: 18px;
+      font-weight: 700;
+      overflow-wrap: anywhere;
+    }
+    footer {
+      background: var(--navy);
+      color: #e6dfd0;
+      padding: 24px 20px;
+      text-align: center;
+      font-size: 13px;
+    }
+    footer a { color: var(--gold); }
+  </style>
 </head>
 <body>
-<header>
-<div class="header-inner">
-<div>
-<a class="brand" href="support.html">YOUR GO</a>
-<div class="tagline">100 words or less. Then it's over to them.</div>
-</div>
-<nav aria-label="Legal and support">
-<a class="active" href="support.html">Support</a>
-<a href="privacy.html">Privacy</a>
-<a href="terms.html">Terms</a>
-</nav>
-</div>
-</header>
+  <header>
+    <div class="brand">YOUR GO</div>
+    <p>100 words or less. Then it's over to them.</p>
+  </header>
 
-<main>
-<h1>Contact & Support</h1>
-<p class="intro">A little help to keep the stories going.</p>
+  <nav aria-label="Legal and support navigation">
+    <a href="support.html" aria-current="page">Support</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms &amp; Conditions</a>
+  </nav>
 
-<div class="panel">
-<h2>Need a hand?</h2>
-<p>Whether a friend request is stuck, a Story won't load, or you've got a brilliant idea for YOUR GO, we'd love to hear from you.</p>
-<p><a class="button" href="mailto:hairypeanut@mail.com?subject=YOUR%20GO%20Support">Email YOUR GO Support</a></p>
-<p><a href="mailto:hairypeanut@mail.com">hairypeanut@mail.com</a></p>
-</div>
+  <main>
+    <h1>Support &amp; Help</h1>
+    <p>Welcome to YOUR GO support. We're here to help you enjoy creating stories with your friends.</p>
 
-<h2>What can we help with?</h2>
-<ul>
-<li>Signing in with Apple and accessing your account</li>
-<li>YOUR GO IDs, friends and invitations</li>
-<li>Creating, joining and reading Stories</li>
-<li>Reporting bugs and technical problems</li>
-<li>Reporting harassment or inappropriate content</li>
-<li>Account deletion and privacy requests</li>
-<li>Purchases and restoring purchases, when available</li>
-</ul>
+    <div class="contact">
+      <h2 style="margin-top:0">Contact Support</h2>
+      <p>For questions, technical problems, account issues or feedback, email:</p>
+      <p class="email"><a href="mailto:hairypeanut@mail.com">hairypeanut@mail.com</a></p>
+      <p>Please include a short description of the problem and, if helpful, your device model and iOS version. Never send passwords or authentication codes.</p>
+    </div>
 
-<h2>Reporting a problem</h2>
-<p>Please describe what happened, which screen you were using, and your iPhone or iPad model and iOS version if relevant.</p>
-<p>Your YOUR GO ID may also help us investigate.</p>
-<p>Never send passwords, verification codes or private Apple account details.</p>
+    <h2>What is YOUR GO?</h2>
+    <p>YOUR GO is a collaborative storytelling game where friends take turns writing a story together. Each contribution can contain up to 100 words. Then another player takes their turn.</p>
 
-<h2>Reporting another player</h2>
-<p>YOUR GO should be a fun and welcoming place for friends to create stories together.</p>
-<p>If you experience harassment, threats, offensive content or inappropriate behaviour, please contact us.</p>
-<p>Use the email subject <strong>YOUR GO Safety Report</strong> and include the relevant Story title, player ID and a description of the problem.</p>
-<p>Avoid sending unnecessary personal information.</p>
+    <h2>Signing In</h2>
+    <p>YOUR GO uses Sign in with Apple. You need to be signed in to access the game. If you sign out, you can sign back in using the same Apple account.</p>
 
-<h2>Account deletion</h2>
-<p>If you wish to delete your YOUR GO account and associated personal information, use the account deletion option in the app where available, or email us.</p>
-<p>Use the subject <strong>YOUR GO Account Deletion</strong>.</p>
-<p>We may need to verify that you own the account before processing your request.</p>
+    <h2>Friends &amp; YOUR GO IDs</h2>
+    <p>Every player receives a unique YOUR GO ID, which can be shared with friends so they can find and connect with you.</p>
+    <p>If you cannot find a friend or send a request, check that the YOUR GO ID has been entered correctly.</p>
 
-<h2>Privacy questions</h2>
-<p>You can contact us about accessing, correcting or deleting your personal information.</p>
-<p>Please read our <a href="privacy.html">Privacy Policy</a> for more information.</p>
+    <h2>Stories &amp; Contributions</h2>
+    <p>Players can contribute up to 100 words per turn, with no daily word limit. A player cannot take two consecutive turns in the same Story.</p>
+    <p>Story writing uses a time-limited turn. If you encounter problems creating, joining or contributing to a Story, please contact support.</p>
 
-<h2>Ideas and feedback</h2>
-<p>Have an idea that could make YOUR GO even more fun? We'd love to hear it.</p>
-<p>After all, the best stories start with a little imagination.</p>
-</main>
+    <h2>Profile Photographs</h2>
+    <p>You can choose a profile photograph using your device. If uploading or displaying a photograph fails, check your internet connection and try again. Contact support if the problem continues.</p>
 
-<footer>
-&copy; 2026 YOUR GO
-<p>
-<a href="support.html">Support</a> ·
-<a href="privacy.html">Privacy Policy</a> ·
-<a href="terms.html">Terms &amp; Conditions</a>
-</p>
-</footer>
+    <h2>Account Deletion</h2>
+    <p>You can request account deletion from the Me section of the app. Deleting your account is different from signing out.</p>
+    <p>Account deletion is designed to remove your Firebase account, profile, YOUR GO ID, friend relationships and associated profile photograph. Local game data is also cleared as part of successful deletion, subject to technical limitations explained in our <a href="privacy.html">Privacy Policy</a>.</p>
+    <p>If deletion fails or you cannot access your account, email <a href="mailto:hairypeanut@mail.com">hairypeanut@mail.com</a> for assistance.</p>
+
+    <h2>Reporting a Problem or Inappropriate Content</h2>
+    <p>If you encounter abusive behaviour, threatening content, harassment or another safety concern, email support with the relevant details. Please avoid including unnecessary personal information.</p>
+
+    <h2>Age Requirement</h2>
+    <p>YOUR GO is intended for players aged 16 and over.</p>
+
+    <h2>Developer</h2>
+    <p>YOUR GO is independently developed and operated by Andrew Sadler in the United Kingdom.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Andrew Sadler. YOUR GO.</p>
+    <p><a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="terms.html">Terms &amp; Conditions</a></p>
+  </footer>
 </body>
 </html>
